@@ -1,10 +1,6 @@
-device_information = [{'hostname': '10.18.10.49', 'username': 'cisco', 'password': 'cisco'},
-                      {'hostname': '10.18.10.50', 'username': 'cisco', 'password': 'cisco'},
-                      {'hostname': '10.18.10.51', 'username': 'cisco', 'password': 'cisco'},
-                      {'hostname': '10.18.10.52', 'username': 'cisco', 'password': 'cisco'},
-                      {'hostname': '10.18.10.53', 'username': 'cisco', 'password': 'cisco'},
-                      {'hostname': '10.18.10.54', 'username': 'cisco', 'password': 'cisco'},
-                      {'hostname': '10.18.10.55', 'username': 'cisco', 'password': 'cisco'}]
-
-for i in device_information:
-    print(i)
+import csv
+with open('eggs.csv', 'w', newline='') as csvfile:
+    spamwriter = csv.writer(csvfile, delimiter=' ',
+                            quotechar='|', quoting=csv.QUOTE_MINIMAL)
+    spamwriter.writerow(['Spam'] * 5 + ['Baked Beans'])
+    spamwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])

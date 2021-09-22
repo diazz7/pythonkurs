@@ -1,7 +1,8 @@
 import napalm
 
-def main():
+def ping_all(device_information, routers):
     driver = napalm.get_network_driver('ios')
+    with driver(hostname=device_information['hostname'], )
     device_information = [{'hostname': '10.18.10.49','username': 'cisco','password': 'cisco'},
                           {'hostname': '10.18.10.50','username': 'cisco','password': 'cisco'},
                           {'hostname': '10.18.10.51','username': 'cisco','password': 'cisco'},
