@@ -1,0 +1,11 @@
+- name: Herisau
+  plz: '9100'
+  streets:
+  - Kasernenstrasse
+  - Bahnhofsstrasse
+  - Alpsteinstrasse
+- name: Rapperswil
+  plz: '8640'
+  streets:
+  - Oberseestrasse
+  - Jonastrasse
